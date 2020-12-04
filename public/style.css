@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  background-color: #c7c4c4;
+  margin: 20px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+}
+
+.wrapper :first-child {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn {
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+.btn-accept {
+  background: springgreen;
+  color: #fff;
+}
+.btn-decline {
+  background: rgb(199, 9, 9);
+  color: #fff;
+}
+
+.decision {
+  background-color: #fff;
+  padding: 0 40px 15px 40px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  justify-content: center;
+  margin-bottom: 10px;
+}

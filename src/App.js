@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Decision from './components/Decision'
+import CommentCard from './components/CommentCard'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Decision>
+        <CommentCard
+          name='Ram'
+          date='2nd June, 2020'
+          comment='Hi this is comment'
+        />
+      </Decision>
+
+      <Decision>
+        <CommentCard
+          name='John'
+          date='2nd June, 2020'
+          comment='Hi this is comment'
+        />
+      </Decision>
+
+      <Decision>
+        <CommentCard
+          name='Hari'
+          date='2nd June, 2020'
+          comment='Hi this is comment'
+        />
+      </Decision>
+
+      <Decision>
+        <CommentCard
+          name='Goman Silwal'
+          date='2nd June, 2020'
+          comment='Hi this is comment'
+        />
+      </Decision>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
